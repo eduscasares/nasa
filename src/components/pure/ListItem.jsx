@@ -1,11 +1,11 @@
 import React from 'react';
 
-const App = () => {
+const ListItem = () => {
     return (
         <div>
-            App main component
+            
         </div>
     );
 }
 
-export default App;
+export default ListItem;
