@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --yellow: #fcc602;
+    --purple: #b100e8;
+    --black: #1e293b;
+    --blue: #3b82f6;
+    --red: #fa4659;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+}
