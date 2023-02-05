@@ -5,11 +5,15 @@ import Heading from './components/pure/Heading';
 
 const App = () => {
     return (
-        <div className='bg-slate-800 min-h-screen py-2'>
+        <div className='flex flex-col justify-center items-center bg-slate-800 min-h-screen py-2'>
 
-            <Heading />
-            <ListContainer />
-            <NasaData />
+            <div className='max-w-7xl'>
+
+                <Heading />
+                <ListContainer />
+                <NasaData />
+
+            </div>
             
         </div>
     );

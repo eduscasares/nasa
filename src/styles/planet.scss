@@ -1,4 +1,4 @@
-.planet {
+.planets {
 
     article {
 
@@ -6,6 +6,7 @@
         min-height: 420px;
         max-width: 320px;
         min-width: 320px;
+        cursor: grab;
         
         &::after {
             content: '';

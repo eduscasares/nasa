@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../styles/planet.scss';
+import '../../utilities/utilities'
 
 const ListItem = () => {
     return (
-        <div className='planet flex gap-6 overflow-x-scroll max-w'>
+        <div className='planets flex gap-6 overflow-x-scroll' id='planets'>
 
             {/* //TODO: Aquí debemos incluir un mapeo del estado trayendo la información obtenida con AXIOS */}
 
@@ -14,7 +15,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -26,7 +27,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -38,7 +39,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -50,7 +51,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -62,7 +63,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -74,7 +75,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -86,7 +87,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 
@@ -98,7 +99,7 @@ const ListItem = () => {
 
                 <div className='relative z-10'>
 
-                    <h2>Earth planet</h2>
+                    <h2 class='text-xl font-bold mb-2'>Earth planet</h2>
                     <p>Planet description</p>
                 </div>
 

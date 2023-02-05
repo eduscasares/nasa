@@ -7,7 +7,7 @@ const ListContainer = () => {
 
             <ListItem />
 
-            <button className='btn-primary flex py-4 px-5 mt-4 rounded-xl bg-slate-800 text-white transition-opacity duration-150 hover:opacity-80'>
+            <button className='btn-primary flex py-4 px-5 mt-10 rounded-xl bg-slate-800 text-white transition-opacity duration-150 hover:opacity-80'>
                 <RocketLaunchIcon className='w-6 mr-3' />
                 Obtain new planet
             </button>
