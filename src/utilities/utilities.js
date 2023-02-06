@@ -1,4 +1,3 @@
-
 setTimeout(() => {
     const slider = document.getElementById('planets');
    
@@ -27,4 +26,10 @@ setTimeout(() => {
     slider.addEventListener('mouseleave', dragStop, false);
 }, 100)
 
+function getRandomDate() {
 
+    let day = Math.floor(Math.random() * 30)
+    let month = Math.floor(Math.random() * 11);
+    let year = Math.floor(Math.random() * 2000);
+
+}

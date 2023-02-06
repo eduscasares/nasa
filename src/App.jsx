@@ -1,7 +1,6 @@
 import React from 'react';
-import { NasaData } from './axios/nasa.data';
-import ListContainer from './components/containers/ListContainer';
 import Heading from './components/pure/Heading';
+import ListItem from './components/containers/ListItem';
 
 const App = () => {
     return (
@@ -10,8 +9,7 @@ const App = () => {
             <div className='max-w-7xl'>
 
                 <Heading />
-                <ListContainer />
-                <NasaData />
+                <ListItem />
 
             </div>
             

@@ -19,6 +19,34 @@
             z-index: 0;
         }
 
+        &:hover {
+
+            .close,
+            .meta-info {
+
+                opacity: 1;
+                
+            }
+
+            .meta-info {
+                transform: translateY(0);
+            }
+
+        }
+
+        .close, 
+        .meta-info {
+
+            opacity: 0;
+            transition: opacity 150ms ease-in-out,
+                        transform 150ms ease-in-out;
+
+        }
+
+        .meta-info {
+            transform: translateY(200px);
+        }
+
     }
 
 }
