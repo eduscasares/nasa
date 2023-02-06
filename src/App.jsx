@@ -4,7 +4,7 @@ import ListItem from './components/containers/ListItem';
 
 const App = () => {
     return (
-        <div className='flex flex-col justify-center items-center bg-slate-800 min-h-screen py-2'>
+        <div className='app flex flex-col justify-center items-center bg-slate-800 min-h-screen py-2'>
 
             <div className='max-w-7xl'>
 

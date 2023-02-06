@@ -27,11 +27,15 @@ const ListItem = () => {
     }, [])
    
 
-    function addPlanet(planet) {
+    function addPlanet() {
 
-        // const aux = [...planets];
-        // aux.push( planet );
-        // setPlanet( aux );
+        NasaData().then( response => {
+
+            const aux = [...planets];
+            aux.push( response )
+            setPlanet( aux )
+
+        })
 
     }
     
@@ -57,7 +61,7 @@ const ListItem = () => {
 
                         return (
 
-                            <article key={ index } className='relative z-10 flex flex-col justify-end rounded-xl p-5 w-full h-full overflow-hidden shadow-md'>
+                            <article key={ index } className='relative z-10 flex flex-col justify-end rounded-xl p-5 min-w-full h-full overflow-hidden shadow-md'>
 
                                 <img onClick={ () => deletePlanet() } className='close absolute z-10 top-5 right-5 cursor-pointer w-6' src={ close } alt="Close" />
 

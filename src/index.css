@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, p {
     color: white;
 }
 
+.app > div {
+    min-width: 1280px;
+}
+
 .btn-primary {
     background-color: #3b82f6;
 }
