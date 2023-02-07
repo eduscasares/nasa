@@ -1,6 +1,4 @@
-import React from 'react';
-import Heading from './components/pure/Heading';
-import ListItem from './components/containers/ListItem';
+import MainRoutes from './routes/MainRoutes';
 
 const App = () => {
     return (
@@ -8,8 +6,7 @@ const App = () => {
 
             <div className='max-w-7xl px-5'>
 
-                <Heading />
-                <ListItem />
+                <MainRoutes />
 
             </div>
             

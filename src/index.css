@@ -14,19 +14,16 @@ h1, h2, h3, h4, h5, p {
     color: white;
 }
 
+.navbar {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 353px;
+}
+
 .app > div {
     max-width: 1280px;
     width: 100%;
 }
-
-.app .planets {
-    min-height: 420px;
-    height: 100%;
-}
-
-.app .planets::-webkit-scrollbar {
-    display: none;
-  }
 
 .btn-primary {
     background-color: #3b82f6;

@@ -5,6 +5,8 @@ import close from '../../assets/close.svg';
 import { NasaData } from '../../axios/nasa.data';
 import NewPlanet from '../pure/NewPlanet';
 import Spinner from '../pure/Spinner';
+import right from '../../assets/right.svg'
+
 
 const ListItem = () => {
 
@@ -93,7 +95,12 @@ const ListItem = () => {
 
             </div>
 
-            <NewPlanet handleClick={ addPlanet } />
+            <div className='flex justify-between'>
+
+                <NewPlanet handleClick={ addPlanet } />
+                { planets.length > 3 ? <img className='lateral-bounce w-6' src={ right } alt="Right" /> : null }
+
+            </div>
         </>
         
     );

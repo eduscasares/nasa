@@ -1,5 +1,4 @@
 import React from 'react';
-import right from '../../assets/right.svg'
 
 const Heading = () => {
     return (
@@ -8,10 +7,8 @@ const Heading = () => {
                 Welcome to your planet list
             </h1>
 
-            <div className='flex justify-between'>
-                <p className='text-lg font-thin md:text-2xl tracking-wider sm:text-lg'>An awesome day to get shoked seeing beautiful pictures!</p>
-                <img className='lateral-bounce w-6' src={ right } alt="Right" />
-           </div>
+            <p className='text-lg font-thin md:text-2xl tracking-wider sm:text-lg'>An awesome day to get shoked seeing beautiful pictures!</p>
+
         </div>
     );
 }
