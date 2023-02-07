@@ -70,7 +70,7 @@ const ListItem = () => {
                                 <div className='meta-info relative z-10'>
 
                                     <h2 className='text-xl font-bold mb-2'>{ element.data.title }</h2>
-                                    {/* <p>{ element.data.explanation }</p> */}
+                                    <p>{ element.data.date }</p>
 
                                 </div>
 
