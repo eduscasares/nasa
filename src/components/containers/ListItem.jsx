@@ -40,12 +40,12 @@ const ListItem = () => {
     }
     
     function deletePlanet(planet) {
-    
+
         const index = planets.indexOf(planet);
         const aux = [...planets];
         aux.splice(index, 1);
         setPlanet(aux)
-    
+
     }
 
     return (
@@ -63,7 +63,7 @@ const ListItem = () => {
 
                             <article key={ index } className='relative z-10 flex flex-col justify-end rounded-xl p-5 min-w-full h-full overflow-hidden shadow-md'>
 
-                                <img onClick={ () => deletePlanet() } className='close absolute z-10 top-5 right-5 cursor-pointer w-6' src={ close } alt="Close" />
+                                <img onClick={ () => deletePlanet(element) } className='close absolute z-10 top-5 right-5 cursor-pointer w-6' src={ close } alt="Close" />
 
                                 <img className='absolute top-0 left-0 w-full h-full object-cover z-0' src={ element.data.url } alt={ element.data.title } />
 

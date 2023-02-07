@@ -26,10 +26,13 @@ setTimeout(() => {
     slider.addEventListener('mouseleave', dragStop, false);
 }, 100)
 
-function getRandomDate() {
+
+export default function getRandomDate() {
 
     let day = Math.floor(Math.random() * 30)
     let month = Math.floor(Math.random() * 11);
     let year = Math.floor(Math.random() * 2000);
+
+    return `${year}-${month}-${day}`;
 
 }
