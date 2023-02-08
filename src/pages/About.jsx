@@ -8,7 +8,7 @@ const About = () => {
                 About
             </h1>
                 
-            <p className='text-lg font-thin md:text-2xl tracking-wider sm:text-lg text-white mb-6'>Proudly develop by Edu 🥸, a moustached Front-End develop based in Cordoba, Spain</p>
+            <p className='text-lg font-thin md:text-2xl tracking-wider sm:text-lg text-white mb-6'>Proudly developed by Edu 🥸, a moustached Front-End developer based in Cordoba, Spain</p>
             <Link className='text-lg font-bold md:text-2xl tracking-wider sm:text-lg text-white' to={ '/contact' }>Ready to get in touch?</Link>
 
         </div>
