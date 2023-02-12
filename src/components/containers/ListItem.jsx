@@ -19,7 +19,8 @@ const ListItem = () => {
         NasaData().then( response => {
 
             const aux = [...planets];
-            aux.push( response )
+
+            response.data.forEach(planet => aux.push(planet))
             setPlanet( aux )
             
             setTimeout(() => {
@@ -75,12 +76,12 @@ const ListItem = () => {
         
                                         <img onClick={ () => deletePlanet(element) } className='close absolute z-10 top-5 right-5 cursor-pointer w-6' src={ close } alt="Close" />
         
-                                        <img className='absolute top-0 left-0 w-full h-full object-cover z-0' src={ element.data.url } alt={ element.data.title } />
+                                        <img className='absolute top-0 left-0 w-full h-full object-cover z-0' src={ element.url } alt={ element.title } />
         
                                         <div className='meta-info relative z-10'>
         
-                                            <h2 className='text-xl font-bold mb-2'>{ element.data.title }</h2>
-                                            <p>{ element.data.date }</p>
+                                            <h2 className='text-xl font-bold mb-2'>{ element.title }</h2>
+                                            <p>{ element.date }</p>
         
                                         </div>
         
@@ -89,8 +90,6 @@ const ListItem = () => {
                                 )
         
                             })
-
-
 
                 }
 

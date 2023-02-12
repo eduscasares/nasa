@@ -1,4 +1,4 @@
-import axios from "axios";
+import { nasaAPI, api_key } from "./axios";
 
 function randomizer(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -24,9 +24,7 @@ export async function NasaData() {
 
     try {
 
-        const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=FKZNcXQQ2LCN5pcMWcqf9b4uWhwoXLf9xk0cfrqf&start_date=${currYear}-${currMonth}-${currDay}&end_date=${yearAgo}-${monthAgo}-${dayAgo}`);
-
-        console.log(response)
+        const response = await nasaAPI.get(`apod?api_key=${ api_key }&start_date=${yearAgo}-${monthAgo}-${dayAgo}&end_date=${currYear}-${currMonth}-${currDay}`);
         
         return response;
 

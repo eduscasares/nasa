@@ -13,15 +13,19 @@ setTimeout(() => {
         mouseDown = false;
     };
 
-    slider.addEventListener('mousemove', (e) => {
-    e.preventDefault();
-    if(!mouseDown) { return; }
-    const x = e.pageX - slider.offsetLeft;
-    const scroll = x - startX;
-    slider.scrollLeft = scrollLeft - scroll;
-    });
+    if( slider ) {
+        slider.addEventListener('mousemove', (e) => {
+            e.preventDefault();
+            if(!mouseDown) { return; }
+            const x = e.pageX - slider.offsetLeft;
+            const scroll = x - startX;
+            slider.scrollLeft = scrollLeft - scroll;
+            });
+        
+            slider.addEventListener('mousedown', dragInit, false);
+            slider.addEventListener('mouseup', dragStop, false);
+            slider.addEventListener('mouseleave', dragStop, false);
+    }
 
-    slider.addEventListener('mousedown', dragInit, false);
-    slider.addEventListener('mouseup', dragStop, false);
-    slider.addEventListener('mouseleave', dragStop, false);
+
 }, 100)
