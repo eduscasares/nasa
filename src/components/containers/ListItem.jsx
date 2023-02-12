@@ -4,6 +4,7 @@ import '../../utilities/utilities';
 import close from '../../assets/close.svg';
 import { NasaData } from '../../axios/nasa.data';
 import NewPlanet from '../pure/NewPlanet';
+import DateSelector from '../pure/DateSelector';
 import Spinner from '../pure/Spinner';
 import right from '../../assets/right.svg'
 
@@ -95,10 +96,12 @@ const ListItem = () => {
 
             </div>
 
-            <div className='flex justify-between'>
+            <div className='flex items-center gap-12 mt-10'>
 
                 <NewPlanet handleClick={ addPlanet } />
                 { planets.length > 3 ? <img className='lateral-bounce w-6' src={ right } alt="Right" /> : null }
+
+                <DateSelector />
 
             </div>
         </>
