@@ -4,7 +4,7 @@ function randomizer(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 
-export async function NasaData() {
+export async function NasaDataWeekly() {
 
     // day = randomizer(1, 30); 
     // month = randomizer(1, 12);

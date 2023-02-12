@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../../styles/planet.scss';
 import '../../utilities/utilities';
 import close from '../../assets/close.svg';
-import { NasaData } from '../../axios/nasa.data';
+import { NasaDataWeekly } from '../../axios/nasa.data';
 import NewPlanet from '../pure/NewPlanet';
 import DateSelector from '../pure/DateSelector';
 import Spinner from '../pure/Spinner';
@@ -16,7 +16,7 @@ const ListItem = () => {
 
     useEffect(() => {
         
-        NasaData().then( response => {
+        NasaDataWeekly().then( response => {
 
             const aux = [...planets];
 
